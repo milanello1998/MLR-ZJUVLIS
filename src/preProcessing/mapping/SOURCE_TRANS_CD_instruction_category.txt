@@ -1,0 +1,14 @@
+BUY,security buy
+SELL,security sell
+STBUY,security buy
+STSEL,security sell
+SBUY,security buy
+SSELL,security sell
+CBUY,security buy
+CSELL,security sell
+STBXL,security buy
+STSXL,security sell
+CSBUY,security buy
+CSSEL,security sell
+SPOT,FX
+FORWARD,FX

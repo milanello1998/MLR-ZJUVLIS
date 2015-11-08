@@ -1,0 +1,10 @@
+1,new
+PENDING,new
+SETTLED,new
+3,new
+CANCELLED,cancelled
+PAID,new
+4,cancelled
+C,cancelled
+O,new
+F,new
