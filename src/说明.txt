@@ -1,0 +1,8 @@
+Step_1.java: 为每条instruction数据找到对应的accounting数据，并将instruction，accounting及对比列合并起来。
+Step_2.java: 将所有枚举类根据mapping规则转化为数字
+Step_3.java: 根据需要选出相应的列
+
+Find_K_Nearest.java: 为每条RC/NC的数据找到最近的K条NC数据，作为决策树的输入
+
+TreeTraversal.java: matlab将得到的决策树每个节点整理成TreeNode.txt文件后，用这个代码把每条规则列出来
+
