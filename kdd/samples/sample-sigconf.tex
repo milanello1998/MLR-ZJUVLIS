@@ -1,0 +1,363 @@
+%
+% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigconf]{acmart}
+
+
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{algpseudocode}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}} % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm
+%
+% defining the \BibTeX command - from Oren Patashnik's original BibTeX documentation.
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+% Rights management information. 
+% This information is sent to you when you complete the rights form.
+% These commands have SAMPLE values in them; it is your responsibility as an author to replace
+% the commands and values with those provided to you when you complete the rights form.
+%
+% These commands are for a PROCEEDINGS abstract or paper.
+\copyrightyear{2018}
+\acmYear{2018}
+\setcopyright{acmlicensed}
+\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
+\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection, June 03--05, 2018, Woodstock, NY}
+\acmPrice{15.00}
+\acmDOI{10.1145/1122445.1122456}
+\acmISBN{978-1-4503-9999-9/18/06}
+
+%
+% These commands are for a JOURNAL article.
+%\setcopyright{acmcopyright}
+%\acmJournal{TOG}
+%\acmYear{2018}\acmVolume{37}\acmNumber{4}\acmArticle{111}\acmMonth{8}
+%\acmDOI{10.1145/1122445.1122456}
+
+%
+% Submission ID. 
+% Use this when submitting an article to a sponsored event. You'll receive a unique submission ID from the organizers
+% of the event, and this ID should be used as the parameter to this command.
+%\acmSubmissionID{123-A56-BU3}
+
+%
+% The majority of ACM publications use numbered citations and references. If you are preparing content for an event
+% sponsored by ACM SIGGRAPH, you must use the "author year" style of citations and references. Uncommenting
+% the next command will enable that style.
+%\citestyle{acmauthoryear}
+
+%
+% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%
+% The "title" command has an optional parameter, allowing the author to define a "short title" to be used in page headers.
+\title{The Name of the Title is Hope}
+
+%
+% The "author" command and its associated commands are used to define the authors and their affiliations.
+% Of note is the shared affiliation of the first two authors, and the "authornote" and "authornotemark" commands
+% used to denote shared contribution to the research.
+\author{Ben Trovato}
+\authornote{Both authors contributed equally to this research.}
+\email{trovato@corporation.com}
+\orcid{1234-5678-9012}
+\author{G.K.M. Tobin}
+\authornotemark[1]
+\email{webmaster@marysville-ohio.com}
+\affiliation{%
+  \institution{Institute for Clarity in Documentation}
+  \streetaddress{P.O. Box 1212}
+  \city{Dublin}
+  \state{Ohio}
+  \postcode{43017-6221}
+}
+
+\author{Lars Th{\o}rv{\"a}ld}
+\affiliation{%
+  \institution{The Th{\o}rv{\"a}ld Group}
+  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
+  \city{Hekla}
+  \country{Iceland}}
+\email{larst@affiliation.org}
+
+\author{Valerie B\'eranger}
+\affiliation{%
+  \institution{Inria Paris-Rocquencourt}
+  \city{Rocquencourt}
+  \country{France}
+}
+
+\author{Aparna Patel}
+\affiliation{%
+ \institution{Rajiv Gandhi University}
+ \streetaddress{Rono-Hills}
+ \city{Doimukh}
+ \state{Arunachal Pradesh}
+ \country{India}}
+ 
+\author{Huifen Chan}
+\affiliation{%
+  \institution{Tsinghua University}
+  \streetaddress{30 Shuangqing Rd}
+  \city{Haidian Qu}
+  \state{Beijing Shi}
+  \country{China}}
+
+\author{Charles Palmer}
+\affiliation{%
+  \institution{Palmer Research Laboratories}
+  \streetaddress{8600 Datapoint Drive}
+  \city{San Antonio}
+  \state{Texas}
+  \postcode{78229}}
+\email{cpalmer@prl.com}
+
+\author{John Smith}
+\affiliation{\institution{The Th{\o}rv{\"a}ld Group}}
+\email{jsmith@affiliation.org}
+
+\author{Julius P. Kumquat}
+\affiliation{\institution{The Kumquat Consortium}}
+\email{jpkumquat@consortium.net}
+
+%
+% By default, the full list of authors will be used in the page headers. Often, this list is too long, and will overlap
+% other information printed in the page headers. This command allows the author to define a more concise list
+% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Trovato and Tobin, et al.}
+
+%
+% The abstract is a short summary of the work to be presented in the article.
+\begin{abstract}
+A clear and well-documented \LaTeX\ document is presented as an article formatted for publication by ACM in 
+a conference proceedings or journal publication. Based on the ``acmart'' document class, this article presents
+and explains many of the common variations, as well as many of the formatting elements
+an author may use in the preparation of the documentation of their work.
+\end{abstract}
+
+%
+% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+% Please copy and paste the code instead of the example below.
+%
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010575.10010755</concept_id>
+  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010553.10010554</concept_id>
+  <concept_desc>Computer systems organization~Robotics</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003033.10003083.10003095</concept_id>
+  <concept_desc>Networks~Network reliability</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Embedded systems}
+\ccsdesc[300]{Computer systems organization~Redundancy}
+\ccsdesc{Computer systems organization~Robotics}
+\ccsdesc[100]{Networks~Network reliability}
+
+%
+% Keywords. The author(s) should pick words that accurately describe the work being
+% presented. Separate the keywords with commas.
+\keywords{datasets, neural networks, gaze detection, text tagging}
+
+%
+
+
+%
+% This command processes the author and affiliation and title information and builds
+% the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+Fax has played an important role in business world to share files remotely since the introduction of the first commercialized version of modern fax machines in 1964 by Xerox Corporation. After we entered 21st century, although business usually maintain some kind of fax capability, fax has faced increasing competition from Internet-based alternatives like emails. However, in some industries and countries, because electronic signatures on contracts are not yet recognized by law, while faxed contracts with copies of signatures are, fax machines enjoy continuing support in business. Financial industry is such an example.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5cm]{figure1.jpg}
+	\caption{FAX Volume - File Number and Trade Number. }
+	\label{figure1}
+\end{figure}
+
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=\linewidth]{figure2}
+	\caption{The pipeline of fax recognition system. }
+	\label{figure2}
+\end{figure*}
+
+State Street is the world's largest custodian bank who interacts with global investment managers, brokers, security companies and settlement houses to provide middle and back office services like record keeping, fund administration, custody. Faxes are heavily used in State Street both as a recipient and a sender. State Street has built an enterprise application (we  use its abbreviation "IL" in rest of this paper) to provider a UI and workflow for operation staffs to handle fax files in electronic way. However, fax processing is still a very manual and labor intensive work. It usually involves 4 steps:
+1. signature verification: operational staffs manually verify signatures on fax files based on pre-collected authorization signature samples;
+2. data capture: operational staffs manually capture data contents in fax files into IL system;
+3. data transformation: transformation rules will be applied on input data and map them to target entity structure - usually in relational format. Approval workflow will be involved as required;
+4. data distribution: transformed data will be distributed to required destinations with ACK/ NAK received from receiver side;
+
+A lot of trades are sent to State Street via fax, which is the beginning of the whole back office processing. Do things right the first time is critical for financial operations, but manual works involved in first two steps above create a lot of impediments towards this goal. As one of the biggest financial service providers in the world, State Street faces big amount of fax files which makes it even harder. As an example, IL receives more than 340,000 fax files in 2017 or almost 1 million trades in these files. See \ref{figure1} for monthly breakdown of both FAX files received and number of trades contained in these FAX files. Also, the operational complexities State Street has bring a lot of extra varieties in fax file format and patterns too - we observed widely changed page layout even within the same fax file because it was from a broker who serves multiple State Street clients at the same time. Besides all these challenges, there are other challenges preventing improvement of fax file processing automation level:
+1. fax image quality: fax images resolution quality could be very bad due to different reasons - sometimes it is a "re-faxed" version which reduced the quality, sometimes the fax machine itself may run out of ink;
+2. handwriting recognition: sometimes the sender may add some handwritten comments on fax paper which contains important information for the receivers too. Handling these involves mechanisms across OCR (optical characters recognition) and NLP (natural language processing) and the results are not always reliable;
+3. unstructured data: financial data used to be highly structured, especially for the target outbound data. However fax files as input data may not always be organized in a structural way which will add more work for data transformation;
+4. signature verification: there are specific scenarios where (especially in east Asia) people use seal stamps as an alternative for signature;
+5. processing efficiency: as trade processing is the beginning of the whole back office operation which has strict service level deadline to catch, the process efficiency is a critical measurement as well;
+
+
+Fax file processing actually can be viewed as a sub-domain of OCR (optical characters recognition) image processing and there have been mature products in areas like invoice processing. However, none of these could be a direct fit in our case because the layout pattern could vary very much, and sometimes it may go into advanced domain like natural language processing. We need to find out a new way to tackle large scale fax files in State Street which can adapt to various layout patterns flexibly, remain a good accuracy level and efficient. Deep learning is the direction we pick.
+
+In this paper, we introduce the large scale fax recognition system in State Street. To be specific, we divide the complicated coupled task into three subtasks. First, we detect the handwritten signatures and verify whether the handwrittings are authorized or not. The detection model is based on Faster-RCNN and the handwriting verification model consists of a deep convolutional neural network and an angular-softmax output layer. Second, we build a convolutional image classification model to identify which company or functional category the fax belongs to. Finally, detailed contents of interest are extracted by a text recognition system, which contains three components, two independent Faster-RCNN models are responsible to detect the locations of each cell in tables and each paragraph respectively, and a Convolutional Recurrent Nueral Network (CRNN) is leveraged for OCR. We conduct abundant experiments on both synthetic and real-world data in State Street. The experimental results indicate the effectiveness and efficiency of our methods.
+
+
+\section{Related Work}
+The problem of data extraction in documents images has drawn attention over decades \cite{nagy2000twenty}. Generally, it involves two types of tasks, character recognition (OCR) and document parsing. With the application of deep neural networks, OCR engines such as Tesseract \cite{smith2007overview} have achieved good performance when dealing with documents with simple textual layout and good quality scans. \citet{jaderberg2014synthetic} firstly employ convolutional neural networks to extract the feature the texts and train end-to-end learnable recognition models. Following this work, several advanced approaches were proposed. Broadly speaking, these approaches can be categorized into two types. In the first approach, text detection and recognition are processed separately \cite{shi2017end, tian2016detecting, he2017deep, lyu2018multi, borisyuk2018rosetta}. The second approach is to learn detection and recognition jointly such as \cite{li2017towards, buvsta2017deep, liu2018fots}. Besides, there are also amount of works that concentrate on extracting data from documents into structured formats \cite{cesarini1998informys, chanod2005legacy, peanho2012semantic, li2016precomputed}. However, such works usually needs accuracy textual information and require expertise and rules from user, limiting their flexibility on data extraction from images.
+
+Most existing work focuses on either converting programmatic document files (i.e., PDF) or text recognition from images (i.e., OCR), leaving the task of extracting structured parsed data from raw image to be an challenging open problem. The reason is that simply combining two independent with single function can bring additional errors. Hence, we propose to system which extract data from raw fax images to improve the parsing accuracy. To precisely spot the data of interest such signatures, tabular data, etc., we naturally need robust and accurate object detection models. Following the state-of-art methods \cite{ren2015faster, dai2016r, li2017light}, we choose Faster R-CNN \cite{ren2015faster} to detect signatures and Light-Head R-CNN \cite{li2017light} to spot table cells respectively.
+
+Besides the high performance, the reason we choose deep neural network-based methods in our system is the models can be finetuned to fit the new coming data via backpropagation, which is natural proper for a online system. There exist several researches working on incrementally improve trained models with online data such as \cite{shmelkov2017incremental, su2016line}. Inspired by such works, we design a interactive learning strategy to train the online models with author feedbacks and avoid the catastrophic forgetting problem.
+
+\section{System Overview}
+\subsection{System Architecture}
+The over-all architecture of the system is shown in Figure \ref{figure2}. The system contains three major components with respect to the workflow of fax processing in the real scenes.  
+
+The system firstly need to identify whether a fax is authorized by verifying the signatures. Concretely, signatures should be detected and located via a object detection model, and then fed to a handwriting verification model. Instead of recognizing the texts of signatures, we propose to treat the task as handwriting classification problem where each authorized writer is assigned with a class ID. The reason lies that the signatures may be forged and therefore we tend to identify the handwritings but not the names. 
+
+The second component is a template classification system. We pre-defined several templates which contains different functional regions. If a fax is classified as a labeled template, it can be directly applied with respect to the defined regions and converted to the structured data formats. Note that we do not set the detailed location of each region but only give a semantic label. The region spotting and text extraction are accomplished by the third component of our system.
+
+Finally, the system extracts the data from each region. This process involves two tasks. First, we employ another object detection model to locate the rectangular region of each text paragraph or table cell. The second step is to recognize the detailed texts in each region.
+
+The system is running semi-automatically. A few of the staff is asked to check and correct the results given by the system via a user interface. In this way, the each corrected result can be regarded as a ground truth training sample and will be fed to the interactive training process to continuously refine the models.
+
+\subsection{Training strategy}
+To train the models efficiently and effectively, we propose a stage-wise training strategy inspired by \cite{bengio2009curriculum}. We first generate a large amount of synthesized data which contains similar data structures with the real faxes but the layout is much simpler. After the models are converged, we set them as the initialization weights and train the models on the real scene data. The easy-to-hard learning strategy makes the models easier to converge. \ref{figure5} shows the comparison between synthesized and true data.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{figure3}
+	\caption{Comparison between synthesized fax (left) and a real one (right). }
+	\label{figure3}
+\end{figure}
+
+
+
+\section{Signature Verification Models}
+
+As introduced in the previous sections, signature verification is the primary task when processing a fax. The process can be divided into two steps, first, the signatures are detected and cropped from the fax image and second, the handwritings need to be identified.
+\subsection{Signature Detection Model}
+Since the features of handwritings differ vastly from those of printed texts. It is a relative simple task.Therefore we employ Faster R-CNN \cite{ren2015faster} with VGG16 \cite{simonyan2014very} to reduce the amount of parameters and save video memory. The architecture is illustrated in Figure \ref{figure3}. Concretely, the model is composed of three major components. The VGG network is utilized to encode the original image into a latent feature map, and then the feature is fed to the region proposal network (RPN) to generate several region proposals, each of which is a candidate to contain a signature with high likelihood. Finally, both the region proposals and the image feature are taken by the R-CNN subnet as input to fine tune the precise border of the signature and classify whether the it is a signature block or the background.
+
+\subsection{Writer Verification Model}
+With consideration of forged signatures, we propose to identify the handwritings but not directly recognize the name for writer verification. Since the signature may belong to an unauthorized writer, we regard this problem as a $k+1$-class classification task when $k$ writers are authenticated. Handwriting verification is a difficult problem which remains a challenge. In this paper, we choose to combine Angular Softmax (A-softmax) \cite{liu2017sphereface} and ResNet-50 \cite{he2016deep} as the classification model. A-softmax is an extension of standard softmax which makes the decision boundary more stringent and separated. In this way, each handwriting is more likely to be categorized into a certain class but not close to the boundary between two classes, which is proper for our case. 
+
+\subsection{Experiments}
+
+\subsubsection*{Data Collection}
+
+\subsubsection*{Metric}
+
+\subsubsection*{Results}
+
+
+
+
+
+
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=\linewidth]{figure4}
+	\caption{Architecture of signature verification model. }
+	\label{figure4}
+\end{figure*}
+
+
+\section{Data Extraction Models}
+Before feed raw image into data extraction models. We classify the fax into several pre-defined classes according to the functionality. In practice, the classes are defined with respect to different companies. The process brings two benefits. (i) Since the document style, fonts, layout varies largely in different companies, we can apply multiple data extraction models, each of which only focus on few types of faxes to improve the accuracy. (ii) with pre-defined layouts, we can summarize each functional region into some normal forms (i.e., regular expression). In this way, the data extraction models only need to recognize raw data from fax images and the extracted texts can also be verified based on the normal forms. In our case, we have 51 types of faxes totally and employ GoogleNet \cite{szegedy2015going} as the classification model for its flexibility and small size. And we are able to achieve 100\% accuracy finally.
+
+The data extraction process involves two tasks as shown in Figure \ref{figure4}. First, we need to detect region of each text snippets and second the texts are recognized via OCR. Though existing OCR applications can achieve high accuracy on text recognition, most of them can hardly distinguish each table cell and tend to generate a line of texts sequentially. However, tabular data plays a key role in most office work scene, especially in financial industry. In this paper, we focus on detecting every table cell in the fax and the rest texts are detected in paragraph level as shown in Figure \ref{figure6}.
+
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=\linewidth]{figure4}
+	\caption{Architecture of data extraction model }
+	\label{figure4}
+\end{figure*}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5cm]{figure6}
+	\caption{An example of data detection in fax }
+	\label{figure6}
+\end{figure}
+
+\subsection{Data Detection Model}
+To effectively detect each table cell and text snippet, we apply the state-of-art object detection model Light-Head R-CNN \cite{li2017light} for this task. Light-Head R-CNN is an extension of Faster R-CNN with higher detection accuracy and speed. Moreover, we choose ResNet-101 in \cite{he2016deep} as the CNN structure for higher detection performance.
+
+As in our experiments, we found that directly training the models with three classes (table cells, text snippets and background) can hardly achieves a satisfactory result. The reason is that texts in table and other paragraphs are often in some fonts, sizes, and peripheral regions are usually blank, which limits the model to distinguish table and paragraphs. To address this problem, we add a new class "table" into the detection problem during training which can improve detection accuracy of cell texts by explicitly provide the relative relationship between tables and text paragraphs.
+
+\subsection{Text Recognition Model}
+The OCR model is convolutional recurrent neural network (CRNN) \cite{shi2017end} in this task. The model consists of a deep CNN, a bi-directional recurrent network (bi-RNN) with long short term units (LSTM) and a connectionist temporal classification (CTC) \cite{graves2006connectionist} output layer. Similar to the detection model, the CNN body is utilized to extract the feature map of the original image and the structure is VGG-16 for its good performance on transfer tasks. The bi-RNN model on top of the CNN is responsible to generate the characters sequentially. CTC output layer is responsible to compute the probability of each output label generated by bi-LSTM by marginalizing
+over the set of all possible alignments paths, which is appropriate to find the local optimum sequence among blanks and duplicate characters.
+\subsection{Experiments}
+
+\subsubsection*{Data Collection}
+
+\subsubsection*{Results}
+
+\section{Deployment}
+\subsection{Deployment Strategy}
+
+\subsection{Incremental Learning with Author Feedbacks}
+As a online system, author feedbacks received are extremely valuable for model refining continuously. Every author feedback can be regarded as a new training sample. Since all the machine learning models in our system are built with neural networks, it can be naturally fine-tuned to adapt to only the feedback samples but need not re-trained on whole training data. However, directly training networks on new data may lead to catastrophic forgetting, that is the network will forget previously learned knowledge. To address this issue, we, with inspiration from existing works \cite{shmelkov2017incremental, yuan2018text}, propose to fine-tune the models with distillation loss.
+
+Specifically, given a trained model $M$ with fixed parameters, the first step is to make a copy $M^{*}$ from $M$. At each timestep during training, we first sample a batch of data $T_{o}$ from $D$. Then we divide both $M$ and $M^{*}$ into several groups and compute the distillation loss on $T_{f}$ as:
+
+\begin{equation}
+\label{eqn_dist}
+	\mathcal{L}_{dist} = \sum_{l=1}^{L}||\phi_{M}^{l}(T_{o})-\phi_{M^{*}}^{l}(T_{o}) ||_{1},
+\end{equation}
+where $||\cdot||$ is L1 norm, $\phi_{M}^{l}$ and $\phi_{M^{*}}^{l}$ denotes the output of the $l$-th group of $M$ and $M^{*}$ respectively. For object detection models (faster rcnn and light-head rcnn), the groups are divided according to the function of different components, including feature extractor, region proposal network and R-CNN subnet. The feature extractor CNN is further separated into several blocks with respect to the pooling processing (VGG) or residual blocks (ResNet) and classification models share this group definition. To adapt the model to the new feedback data, we train $M^{*}$ on $T_{f}$ by minimizing the standard classification/detection loss $\mathcal{L}_{task}$. The final loss is computed as:
+
+\begin{equation}
+\mathcal{L}=\mathcal{L}_{task} + \alpha\cdot\mathcal{L}_{dist}
+\end{equation}
+where $\alpha$ is a hyper-parameter to control the ratio between distillation loss and standard loss. The algorithm is detailed in Algorithm \ref{algorithm1}.
+
+
+\begin{algorithm}[htb]
+	\caption{Incremental Learning with Author Feedbacks}
+	\label{algorithm1}
+	\raggedright
+	\KwIn{Trained Model $M$; Author feedback set $D_{f}$; Original training dataset $D$; Batch size $B$; New data rate $p$; Weight of distillation loss $\alpha$, Training algorithm $A$}
+	
+	\KwOut{Trained New Model $M^*(\theta)$}
+	\While{not converge}{
+		Random sample a training batch $T$, including $B\times p$ samples from $D_f$ as $T_{f}$ and $B\times (1 - p)$ samples from $D$ as $T_{o}$ respectively \\
+		Compute distillation loss $\mathcal{L}_{dist}$ on $T_{o}$ as Eqn. \ref{eqn_dist}\\
+		Compute task loss $\mathcal{L}_{task}$ on $T_{f}$ \\
+		Update model paramter $\theta$ with $A$ by minimizing training loss $\mathcal{L}=\mathcal{L}_{task} + \alpha\cdot\mathcal{L}_{dist}$
+	}
+\end{algorithm}
+
+\section{Conclusion and Future Work}
+
+In this paper, we present a system that automatically parses fax images into the structured formatted data. The system consists of three major functional components: signature verification, template classification and data extraction. On all the tasks, the system has achieved high accuracy and significantly reduce human labor.
+
+Moreover, we also propose a detailed interactive training strategy. With this approach, the system is able to absorb the effective knowledge from author feedback and in turn fine-tune the machine learning models continuously.
+
+In the future, we plan to extend the system in two aspects. First, we will investigate the methods to precisely convert tabular data into the formats we want. It is a challenging task for the statement and layout vary largely in different companies. Second, we are interested in improving the quality and accuracy of the existing models.
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{kdd}
+
+\end{document}
